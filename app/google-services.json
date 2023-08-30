@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "216172321672",
+    "project_id": "live-earth-map-and-navigation",
+    "storage_bucket": "live-earth-map-and-navigation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216172321672:android:f2a12ced60948470d5383d",
+        "android_client_info": {
+          "package_name": "com.live.eathmap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216172321672-inujonu2r21c3h3r7k340784fv9bbrvu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw150ITzrZE8pBtuLl6EXEIfjDkSTYIog"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216172321672-inujonu2r21c3h3r7k340784fv9bbrvu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

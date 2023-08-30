@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".navigationModule.fragments.VoiceNavigation">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:elevation="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:layout_constraintEnd_toStartOf="@+id/RouteBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".navigationModule.fragments.TextNavigation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/navOriginTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@null"
+                android:hint="Current Location"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/currentLocateBtn"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@color/ThemeColor"
+                app:layout_constraintBottom_toTopOf="@+id/navDestinationTxt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/dot2"
+                app:layout_constraintTop_toBottomOf="@+id/navOriginTxt" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/navDestinationTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@null"
+                android:hint="Enter Destination Location"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/appCompatImageView8" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/currentLocateBtn"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:src="@drawable/cureent_locate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/ThemeColor" />
+
+            <View
+                android:id="@+id/dot1"
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/curved_bg"
+                app:layout_constraintEnd_toEndOf="@+id/currentLocateBtn"
+                app:layout_constraintStart_toStartOf="@+id/currentLocateBtn"
+                app:layout_constraintTop_toBottomOf="@+id/currentLocateBtn" />
+
+            <View
+                android:id="@+id/dot2"
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/curved_bg"
+                app:layout_constraintEnd_toEndOf="@+id/currentLocateBtn"
+                app:layout_constraintStart_toStartOf="@+id/currentLocateBtn"
+                app:layout_constraintTop_toBottomOf="@+id/dot1" />
+
+            <View
+                android:id="@+id/dot3"
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/curved_bg"
+                app:layout_constraintEnd_toEndOf="@+id/currentLocateBtn"
+                app:layout_constraintStart_toStartOf="@+id/currentLocateBtn"
+                app:layout_constraintTop_toBottomOf="@+id/dot2" />
+
+            <View
+                android:id="@+id/dot4"
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/curved_bg"
+                app:layout_constraintEnd_toEndOf="@+id/currentLocateBtn"
+                app:layout_constraintStart_toStartOf="@+id/currentLocateBtn"
+                app:layout_constraintTop_toBottomOf="@+id/dot3" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView8"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:src="@drawable/ic_baseline_location_on_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:tint="@color/ThemeColor" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/navigationSpeakBtn"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/speak_btn_design"
+        android:padding="@dimen/_20sdp"
+        android:src="@drawable/voice_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Tap To Speak"
+        android:textColor="@color/ThemeColor"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/navigationSpeakBtn"
+        app:layout_constraintStart_toStartOf="@+id/navigationSpeakBtn"
+        app:layout_constraintTop_toBottomOf="@+id/navigationSpeakBtn" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/NavigateBtn"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/bg_theme_color"
+        android:backgroundTint="@color/c5"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView4">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView9"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/navigate_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:gravity="start"
+            android:text="Navigate"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/appCompatImageView9"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/RouteBtn"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/bg_theme_color"
+        android:backgroundTint="@color/c5"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView10"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_route_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="Get Route"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatImageView10" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

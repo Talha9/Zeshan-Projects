@@ -1,0 +1,66 @@
+package com.earthmap.satellite.map.location.map.satelliteTrackerModule.helper
+
+import com.earthmap.satellite.map.location.map.satelliteTrackerModule.model.SatelliteTrackerMainModel
+
+
+class SatelliteTrackerMianHelper {
+   companion object{
+       fun satelliteListFiller():ArrayList<SatelliteTrackerMainModel>{
+           val list=ArrayList<SatelliteTrackerMainModel>()
+           list.add(SatelliteTrackerMainModel("Amateur radio",18))
+           list.add(SatelliteTrackerMainModel("Beidou Navigation System",35))
+           list.add(SatelliteTrackerMainModel("Brightest",1))
+           list.add(SatelliteTrackerMainModel("Celestis",45))
+           list.add(SatelliteTrackerMainModel("CubeSats",32))
+           list.add(SatelliteTrackerMainModel("Disaster monitoring",8))
+           list.add(SatelliteTrackerMainModel("Earth resources",6))
+           list.add(SatelliteTrackerMainModel("Education",29))
+           list.add(SatelliteTrackerMainModel("Engineering",28))
+           list.add(SatelliteTrackerMainModel("Experimental",19))
+           list.add(SatelliteTrackerMainModel("Flock",48))
+           list.add(SatelliteTrackerMainModel("Galileo",22))
+           list.add(SatelliteTrackerMainModel("Geodetic",27))
+           list.add(SatelliteTrackerMainModel("Geostationary",10))
+           list.add(SatelliteTrackerMainModel("Global Positioning System (GPS) Constellation",50))
+           list.add(SatelliteTrackerMainModel("Global Positioning System (GPS) Operational",20))
+           list.add(SatelliteTrackerMainModel("Globalstar",17))
+           list.add(SatelliteTrackerMainModel("Glonass Constellation",51))
+           list.add(SatelliteTrackerMainModel("Glonass Operational",21))
+           list.add(SatelliteTrackerMainModel("GOES",5))
+           list.add(SatelliteTrackerMainModel("Gonets",40))
+           list.add(SatelliteTrackerMainModel("Gorizont",12))
+           list.add(SatelliteTrackerMainModel("Intelsat",11))
+           list.add(SatelliteTrackerMainModel("Iridium",15))
+           list.add(SatelliteTrackerMainModel("IRNSS",46))
+           list.add(SatelliteTrackerMainModel("ISS",2))
+           list.add(SatelliteTrackerMainModel("Lemur",49))
+           list.add(SatelliteTrackerMainModel("Military",30))
+           list.add(SatelliteTrackerMainModel("Molniya",14))
+           list.add(SatelliteTrackerMainModel("Navy Navigation Satellite System",24))
+           list.add(SatelliteTrackerMainModel("NOAA",4))
+           list.add(SatelliteTrackerMainModel("O3B Networks",43))
+           list.add(SatelliteTrackerMainModel("OneWeb",53))
+           list.add(SatelliteTrackerMainModel("Orbcomm",16))
+           list.add(SatelliteTrackerMainModel("Parus",38))
+           list.add(SatelliteTrackerMainModel("QZSS",47))
+           list.add(SatelliteTrackerMainModel("Radar Calibration",31))
+           list.add(SatelliteTrackerMainModel("Raduga",13))
+           list.add(SatelliteTrackerMainModel("Russian LEO Navigation",25))
+           list.add(SatelliteTrackerMainModel("Satellite-Based Augmentation System",23))
+           list.add(SatelliteTrackerMainModel("Search & rescue",7))
+           list.add(SatelliteTrackerMainModel("Space & Earth Science",26))
+           list.add(SatelliteTrackerMainModel("Starlink",52))
+           list.add(SatelliteTrackerMainModel("Strela",39))
+           list.add(SatelliteTrackerMainModel("Tracking and Data Relay Satellite System",9))
+           list.add(SatelliteTrackerMainModel("Tselina",44))
+           list.add(SatelliteTrackerMainModel("Tsikada",42))
+           list.add(SatelliteTrackerMainModel("Tsiklon",41))
+           list.add(SatelliteTrackerMainModel("TV",34))
+           list.add(SatelliteTrackerMainModel("Weather",3))
+           list.add(SatelliteTrackerMainModel("Westford Needles",37))
+           list.add(SatelliteTrackerMainModel("XM and Sirius",33))
+           list.add(SatelliteTrackerMainModel("Yaogan",36))
+           return list
+       }
+   }
+}

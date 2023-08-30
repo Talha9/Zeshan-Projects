@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Live Earth Map and Navigation</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="mapbox_access_token_1">pk.eyJ1Ijoid2V0ZWMtMTIzIiwiYSI6ImNsY21iaHlwbjB4d2Yzc21xOWx2MGc3MWUifQ.UUGbCuH1wTtRBflgQYregQ</string>
+    <string name="mapbox_access_token_2">pk.eyJ1Ijoia29sYW4tNTYyIiwiYSI6ImNsY21jZnB0NjA1ZjIzdm9jaXNvdW52ZTMifQ.bqGIDZEFaO2PNPsxIpq6aw</string>
+    <string name="mapbox_access_token_3">pk.eyJ1IjoibWFwZWw4NTAzMCIsImEiOiJjbGNtZDEyeWUwdmY4M3ZyeXFkdW9iY3dzIn0.2azJyfbJBESdTAfhovrRZQ</string>
+    <string name="mapbox_access_token_4">pk.eyJ1IjoicGFnb2YxNjc2OSIsImEiOiJjbGNtZDlrcWsxY3hjM3BwNmdidGdtMWVzIn0.iH50n7IEVbCUHmCzvO-vlQ</string>
+    <string name="mapbox_access_token_5">pk.eyJ1IjoiamFqaWhlNTc3MiIsImEiOiJjbGNtZGdwc2oweWFwM3ltcWswOXM5NnBlIn0.Hye5zx6Abt3O-YgfVn7pog</string>
+    <string name="mapbox_access_token_6">pk.eyJ1IjoidmlsYWZpOTg0MSIsImEiOiJjbGNtZG16MTYwMW1hM3FtcmR2cDZxNHU4In0.1g8pdA1LLpThzvhe3SaD2A</string>
+    <string name="mapbox_access_token_7">pk.eyJ1IjoiY290YXdhcjIxOCIsImEiOiJjbGNtZHJ2ODgwcnB5M3ZucnVsZDRzbm95In0.T6kcnZ35q3KtwTfyAtHb4w</string>
+    <string name="mapbox_access_token_8">pk.eyJ1IjoiYmlrYWthdjMxMCIsImEiOiJjbGNtZHgxMngweWZsM3ltcWxldWhpb2lzIn0.YbzSKDYSOgVivHKu9_L6Xg</string>
+    <string name="home">Home</string>
+    <string name="workouts">Workouts</string>
+
+    <string name="sotw_north">N</string>
+    <string name="sotw_east">E</string>
+    <string name="sotw_south">S</string>
+    <string name="sotw_west">W</string>
+    <string name="sotw_northeast">NE</string>
+    <string name="sotw_northwest">NW</string>
+    <string name="sotw_southeast">SE</string>
+    <string name="sotw_southwest">SW</string>
+
+    <!--Test ad ids-->
+    <string name="admob_app_id">ca-app-pub-7041249337741976~9570912262</string>
+    <string name="applovin_app_id">xsUBG4sghiVDHcDMQiUxLhH3KN3x9lNiXlDEK4ovXr0Jgqg7sP092cmS02G8RsaHiXVsfma7lHbJezS9Cw4Tq1</string>
+    <string name="admob_banner_ad_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_interstitial_ad_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_native_ad_id">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="admob_app_open_ad_id">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="max_banner_id">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="max_interstitial_id">xsUBG4sghiVDHcDMQiUxLhH3KN3x9lNiXlDEK4ovXr0Jgqg7sP092cmS02G8RsaHiXVsfma7lHbJezS9Cw4Tq1</string>
+    <string name="max_native_id">xsUBG4sghiVDHcDMQiUxLhH3KN3x9lNiXlDEK4ovXr0Jgqg7sP092cmS02G8RsaHiXVsfma7lHbJezS9Cw4Tq1</string>
+
+    <string name="live_earth_map">Live Earth Map and Navigation</string>
+    <string name="title_line">See The Map in Different Way</string>
+    <string name="Premium_privacy_desc"><u>Privacy policy &amp; Terms of Use</u></string>
+
+
+    <!--  Live ad ids-->
+    <!--<string name="admob_app_id">ca-app-pub-7041249337741976~9570912262</string>
+     <string name="applovin_app_id">xsUBG4sghiVDHcDMQiUxLhH3KN3x9lNiXlDEK4ovXr0Jgqg7sP092cmS02G8RsaHiXVsfma7lHbJezS9Cw4Tq1</string>
+      <string name="admob_banner_ad_id">ca-app-pub-7041249337741976/1697458962</string>
+      <string name="admob_interstitial_ad_id">ca-app-pub-7041249337741976/5445132284</string>
+      <string name="admob_native_ad_id">ca-app-pub-7041249337741976/8614221100</string>
+      <string name="admob_app_open_ad_id">ca-app-pub-7041249337741976/3361894425</string>
+          <string name="max_banner_id">7daab05bce1b90d7</string>
+    <string name="max_interstitial_id">46fb02a6dc24a0aa</string>
+    <string name="max_native_id">257bda085e2c7f4d</string>-->
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="item_bg_color">#B73D3F6E</color>
+    <color name="themetrans">#94212073</color>
+    <color name="toolsThemeColor">#f3b605</color>
+    <color name="navigationThemeColor">#f81832</color>
+    <color name="homeThemeColor">#00c09e</color>
+    <color name="savedThemeColor">#00ccff</color>
+    <color name="settingsThemeColor">#ff6c00</color>
+    <color name="ThemeColor">#FD3A3A3C</color>
+    <color name="home_item_color">#C3626268</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBG">#F3F3FD</color>
+    <color name="colorGray">#E8E8F0</color>
+    <color name="colorDarkGray">#939397</color>
+    <color name="colorGreen">#22C829</color>
+    <color name="burningOrange">#F78828</color>
+    <color name="c1">#6762da</color>
+    <color name="c2">#269cf0</color>
+    <color name="c3">#f26e03</color>
+    <color name="c4">#07c967</color>
+    <color name="c5">#ee221f</color>
+    <color name="c6">#00c79c</color>
+</resources>

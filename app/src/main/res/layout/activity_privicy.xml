@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ThemeColor"
+    tools:context=".splashModule.PrivicyActivity">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView11"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/home_worldwide"
+        android:layout_margin="@dimen/_30sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/live_earth_map"
+
+        android:layout_marginTop="@dimen/_30sdp"
+        android:textColor="@color/burningOrange"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView11" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Studio built the Live Earth Map and Navigation app as an Ad Supported app. This SERVICE is provided by TM Studio at no cost and is intended for use as is."
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView27" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/read_more_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="R e a d   M o r e. . . ."
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatTextView8"
+                app:layout_constraintStart_toStartOf="@+id/appCompatTextView8"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView8" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="Read Privacy"
+        android:textColor="#1858F6"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/read_more_btn"
+        app:layout_constraintStart_toStartOf="@+id/read_more_btn"
+        app:layout_constraintTop_toBottomOf="@+id/read_more_btn" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#1858F6"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatTextView29"
+                app:layout_constraintStart_toStartOf="@+id/appCompatTextView29"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView29" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/privacyCheck"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:buttonTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/view7"
+        app:layout_constraintStart_toEndOf="@+id/appCompatTextView29"
+        app:layout_constraintTop_toTopOf="@+id/appCompatTextView29" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/privacyMoveToMainBtn"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_30sdp"
+                android:background="@drawable/btn_background_round_white"
+                android:backgroundTint="@color/burningOrange"
+                android:elevation="@dimen/_5sdp"
+                android:text="Let's Go..."
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView29" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

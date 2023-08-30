@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>interstitial_remote_check</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>interstitial_counter</key>
+        <value>4</value>
+    </entry>
+    <entry>
+        <key>interstitial_dialog_time</key>
+        <value>3000</value>
+    </entry>
+    <entry>
+        <key>admob_first</key>
+        <value>true</value>
+    </entry>
+</defaultsMap>

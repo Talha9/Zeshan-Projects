@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.earthmap.satellite.map.location.map">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS"
+        tools:ignore="HighSamplingRate" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+    <application
+        android:name=".Utils.MyAppClass"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".home.Home"
+            android:exported="true"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.MyApplication.NoActionBar"></activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+        <meta-data
+            android:name="applovin.sdk.key"
+            android:value="@string/applovin_app_id" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".PremiumActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".nearBy.activities.NearbyMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".nearBy.activities.NearByActivity"
+            android:exported="true" />
+        <activity
+            android:name=".isoCodesModule.activities.IsoCodesMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Utils.MapNavigation.MapNavigationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".compassModule.activities.CompassMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".myLocationModule.MyLocationMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".splashModule.PrivicyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".splashModule.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".satelliteTrackerModule.SatteliteTrackerMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".navigationModule.activities.NavigationMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".earthMapModule.EarthMapMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".weatherModule.CurrentWeatherActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
