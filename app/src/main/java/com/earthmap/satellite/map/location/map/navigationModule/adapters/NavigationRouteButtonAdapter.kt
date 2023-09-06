@@ -48,7 +48,7 @@ class NavigationRouteButtonAdapter(var mContext: Context, var list:ArrayList<Nav
                 AppCompatResources.getDrawable(
                     mContext,R.drawable.bg_theme_color
                 ))
-            holder.txt!!.setTextColor(mContext.getColor(R.color.white))
+            holder.txt!!.setTextColor(mContext.getColor(R.color.ThemeColorLight))
         }
         val distanceInKm=(model.distanceTxt).toDouble()/1000
 

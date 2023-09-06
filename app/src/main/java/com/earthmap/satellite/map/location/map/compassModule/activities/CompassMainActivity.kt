@@ -113,13 +113,11 @@ class CompassMainActivity : AppCompatActivity() {
     }
 
     private fun adjustSotwLabel(azimuth: Float) {
-        binding.CompassText.setText(mCompassFormatter!!.format(azimuth))
+        binding.CompassText.text = mCompassFormatter!!.format(azimuth)
     }
 
     private fun mBannerAdsSmall() {
-        MyAppAds.loadEarthMapBannerForMainMediation(
-            binding.smallAd.adContainer, this
-        )
+        MyAppAds.loadEarthMapBannerForMainMediation(binding.smallAd.adContainer, this)
 
     }
 
