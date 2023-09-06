@@ -38,8 +38,10 @@ class MyAppClass : Application() {
         Firebase.initialize(this)
        // getDataFromFirebase()
 
-
-        MobileAds.initialize(this) { }
+        try {
+            MobileAds.initialize(this) { }
+        } catch (e: Exception) {
+        }
         appOpenAdsManager = AppOpenAdsManager(this)
         AudienceNetworkAds.initialize(this)
        // MyAppAds.preReLoadAds(this)

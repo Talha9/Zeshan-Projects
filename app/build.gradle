@@ -60,10 +60,10 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
-    implementation 'com.google.firebase:firebase-common-ktx:20.3.0'
-    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.3.5'
+    implementation 'com.google.firebase:firebase-common-ktx:20.3.3'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.4.1'
     implementation 'com.google.firebase:firebase-analytics-ktx:21.2.0'
-    implementation 'com.google.firebase:firebase-config-ktx:21.3.0'
+    implementation 'com.google.firebase:firebase-config-ktx:21.4.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
@@ -132,16 +132,16 @@ dependencies {
 
 
     //googlebilling
-    implementation 'com.android.billingclient:billing:4.0.0'
+    implementation 'com.android.billingclient:billing:6.0.1'
     //ads
-    implementation 'com.google.android.gms:play-services-ads:22.0.0'
-    implementation 'com.google.ads.mediation:facebook:6.13.7.0'
+    implementation 'com.google.android.gms:play-services-ads:22.3.0'
+    implementation 'com.google.ads.mediation:facebook:6.15.0.0'
     //implementation 'com.facebook.android:audience-network-sdk:6.6.0'
 
     //firebase
     implementation 'com.google.firebase:firebase-core:21.1.1'
-    implementation 'com.google.firebase:firebase-messaging:23.1.1'
-    implementation 'com.google.firebase:firebase-database:20.1.0'
+    implementation 'com.google.firebase:firebase-messaging:23.2.1'
+    implementation 'com.google.firebase:firebase-database:20.2.2'
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
 
     // Import the BoM for the Firebase platform
@@ -159,9 +159,9 @@ dependencies {
     implementation "com.github.ome450901:SimpleRatingBar:1.5.1"
 
     //AppLovin
-    implementation 'com.applovin:applovin-sdk:10.2.0'
+    implementation 'com.applovin:applovin-sdk:11.11.3'
 
     //Max ads
-    implementation 'com.applovin:applovin-sdk:+'
+    implementation 'com.applovin:applovin-sdk:'
     implementation 'com.applovin.mediation:facebook-adapter:6.8.0.7'
 }
