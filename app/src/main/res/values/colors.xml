@@ -15,6 +15,7 @@
     <color name="savedThemeColor">#00ccff</color>
     <color name="settingsThemeColor">#ff6c00</color>
     <color name="ThemeColor">#FD3A3A3C</color>
+    <color name="ThemeColorLight">#FD737375</color>
     <color name="home_item_color">#C3626268</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBG">#F3F3FD</color>
