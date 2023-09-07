@@ -39,7 +39,7 @@ class PrivicyActivity : AppCompatActivity() {
         val isSceondTimet = sharedLiveStreetViewPreferences!!.getBoolean("is2ndTime", false)
 
         if (isSceondTimet) {
-            val intent = Intent(this, PremiumActivity::class.java)
+            val intent = Intent(this, Home::class.java)
             startActivity(intent)
             finish()
         } else {

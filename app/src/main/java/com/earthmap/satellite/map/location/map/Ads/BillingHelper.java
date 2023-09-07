@@ -11,7 +11,7 @@ public class BillingHelper {
     }
     public boolean isNotAdPurchased() {
         //Add ! for Show Ads behind the billingPreferences Word
-        return !billingPreferences.getBoolean("ads_purchase", false);
+        return billingPreferences.getBoolean("ads_purchase", false);
     }
     public void setBillingPreferences(boolean status) {
         billingPreferences.edit().putBoolean("ads_purchase", status).apply();

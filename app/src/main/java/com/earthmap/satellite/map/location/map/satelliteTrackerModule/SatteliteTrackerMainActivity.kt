@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.KeyEvent
 import android.view.View
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.earthmap.satellite.map.location.map.Ads.MyAppAds
 import com.earthmap.satellite.map.location.map.Ads.MyAppShowAds
@@ -184,6 +185,8 @@ class SatteliteTrackerMainActivity : AppCompatActivity(),
                     }
                 }
 
+            } else {
+                Toast.makeText(this, "No Satellite Found!", Toast.LENGTH_SHORT).show()
             }
         }
         mSatelliteViewModel.errorMessage.observe(this) {
