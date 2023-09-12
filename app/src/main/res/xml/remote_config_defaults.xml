@@ -16,4 +16,16 @@
         <key>admob_first</key>
         <value>true</value>
     </entry>
+    <entry>
+        <key>app_open_remote_check</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>banner_remote_check</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>native_remote_check</key>
+        <value>true</value>
+    </entry>
 </defaultsMap>

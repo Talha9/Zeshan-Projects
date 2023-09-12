@@ -86,7 +86,7 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun moveToMain() {
-        if (MyAppClass.appOpenAdsManager != null) {
+        if (MyAppClass.appOpenAdsManager != null  && MyAppAds.mFirebaseRemoteConfig.getBoolean("app_open_remote_check")) {
             MyAppClass.appOpenAdsManager!!.showAppOpenAdForSplash(this,
                 object : FullScreenContentCallback() {
                     override fun onAdFailedToShowFullScreenContent(p0: AdError) {

@@ -144,7 +144,7 @@ public class MyAppAds {
     public static void loadEarthMapBannerForMainMediation(final LinearLayout adContainer, final Context context) {
         BillingHelper billingHelper = new BillingHelper(context);
         if (billingHelper.isNotAdPurchased()) {
-            if (shouldShowAdmob) {
+            if (shouldShowAdmob && MyAppAds.mFirebaseRemoteConfig.getBoolean("banner_remote_check")) {
                 AdView adView = new AdView(context);
                 adView.setAdUnitId(MyAppAds.banner_admob_inApp);
                 adView.setAdSize(getAdaptiveAdSize(adView));

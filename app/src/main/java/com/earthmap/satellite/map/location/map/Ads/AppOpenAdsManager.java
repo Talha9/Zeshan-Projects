@@ -50,11 +50,11 @@ public class AppOpenAdsManager implements Application.ActivityLifecycleCallbacks
     public void onStart() {
         if (!(makerAppCurrentActivity instanceof SplashActivity)) {
             Log.d(LOG_TAG, "onStart: Showing ");
-                if (billingHelper.isNotAdPurchased() && canAppOpenShow) {
+                if (billingHelper.isNotAdPurchased() && canAppOpenShow && MyAppAds.mFirebaseRemoteConfig.getBoolean("app_open_remote_check")) {
                     showAdIfAvailable();
                 }
         } else {
-            if (billingHelper.isNotAdPurchased()) {
+            if (billingHelper.isNotAdPurchased() && MyAppAds.mFirebaseRemoteConfig.getBoolean("app_open_remote_check")) {
                 Log.d(LOG_TAG, "onStart:Not  Showing because splash");
                 fetchAd();
             }

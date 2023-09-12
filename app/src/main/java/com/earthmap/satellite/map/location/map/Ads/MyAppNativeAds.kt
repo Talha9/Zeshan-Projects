@@ -60,8 +60,8 @@ class MyAppNativeAds {
                     mContext
                 )
 
-            if (billingHelper.isNotAdPurchased) {
-                nativeAdLoader!!.loadAd(createNativeAdView(mContext))
+            if (billingHelper.isNotAdPurchased && MyAppAds.mFirebaseRemoteConfig.getBoolean("native_remote_check")) {
+                nativeAdLoader.loadAd(createNativeAdView(mContext))
             }
         }
 
@@ -137,7 +137,7 @@ class MyAppNativeAds {
                         mContext
                     )
 
-                if (billingHelper.isNotAdPurchased) {
+                if (billingHelper.isNotAdPurchased && MyAppAds.mFirebaseRemoteConfig.getBoolean("native_remote_check")) {
                     if (MyAppAds.shouldShowAdmob) {
                         adLoader.loadAd(AdRequest.Builder().build())
                     }
