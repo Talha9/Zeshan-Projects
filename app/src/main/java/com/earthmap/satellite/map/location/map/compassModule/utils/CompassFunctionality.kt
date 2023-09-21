@@ -24,8 +24,8 @@ class CompassFunctionality(mContext: Context) : SensorEventListener {
 
     init {
         sensorManager = mContext.getSystemService(Context.SENSOR_SERVICE) as SensorManager
-        gsensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
-        msensor = sensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD)
+        gsensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)!!
+        msensor = sensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD)!!
     }
     fun start() {
         sensorManager.registerListener(this, gsensor, SensorManager.SENSOR_DELAY_FASTEST)

@@ -4,15 +4,15 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.navigation.gpsmaps.tools.areacalculator",
+  "applicationId": "com.live.eathmap",
   "variantName": "release",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 1,
-      "versionName": "1.0.1",
+      "versionCode": 16,
+      "versionName": "1.1.6",
       "outputFile": "app-release.apk"
     }
   ],

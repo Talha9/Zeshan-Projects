@@ -43,6 +43,7 @@ class HomeFragment : Fragment() {
     var adapter: HomeAdapter? = null
     var sensorManager: SensorManager? = null
     lateinit var binding: FragmentHomeBinding
+    var isSensorAvailable = false
     override fun onAttach(activity: Activity) {
         super.onAttach(activity)
         mContext = activity
@@ -56,6 +57,7 @@ class HomeFragment : Fragment() {
 
 
         binding = FragmentHomeBinding.inflate(layoutInflater)
+
 
 
         initialization()
@@ -78,9 +80,11 @@ class HomeFragment : Fragment() {
         binding.homeRecView.layoutManager = GridLayoutManager(mContext, 2)
         sensorManager =
             requireActivity().getSystemService(AppCompatActivity.SENSOR_SERVICE) as SensorManager
+        isSensorAvailable = checkSensorAvailability(Sensor.TYPE_MAGNETIC_FIELD)
         homeViewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
         homeViewModel.list.observe(viewLifecycleOwner) {
-            adapter = HomeAdapter(mContext, it, object : HomeCallback {
+
+            adapter = HomeAdapter(mContext, it, isSensorAvailable,object : HomeCallback {
                 override fun onItemClick(model: HomeItemModel, position: Int) {
                     when (position) {
                         0 -> {
@@ -95,6 +99,7 @@ class HomeFragment : Fragment() {
                                 mIntent
                             )
                         }
+
                         1 -> {
                             binding.adWaitingLayout.visibility = View.VISIBLE
 
@@ -103,9 +108,12 @@ class HomeFragment : Fragment() {
                                 Intent(mContext, SatteliteTrackerMainActivity::class.java)
                             MyAppShowAds.meidationForClickLiveStreetViewWithoutCounter(
                                 mContext,
-                                MyAppAds.admobInterstitialAd, MyAppAds.maxInterstitialAdLiveEarth
-                            ,mIntent)
+                                MyAppAds.admobInterstitialAd,
+                                MyAppAds.maxInterstitialAdLiveEarth,
+                                mIntent
+                            )
                         }
+
                         2 -> {
                             binding.adWaitingLayout.visibility = View.VISIBLE
 
@@ -113,9 +121,12 @@ class HomeFragment : Fragment() {
                             val mIntent = Intent(mContext, NearbyMainActivity::class.java)
                             MyAppShowAds.meidationForClickLiveStreetViewWithoutCounter(
                                 mContext,
-                                MyAppAds.admobInterstitialAd, MyAppAds.maxInterstitialAdLiveEarth
-                            ,mIntent)
+                                MyAppAds.admobInterstitialAd,
+                                MyAppAds.maxInterstitialAdLiveEarth,
+                                mIntent
+                            )
                         }
+
                         3 -> {
                             binding.adWaitingLayout.visibility = View.VISIBLE
 
@@ -123,9 +134,12 @@ class HomeFragment : Fragment() {
                             val mIntent = Intent(mContext, CurrentWeatherActivity::class.java)
                             MyAppShowAds.meidationForClickLiveStreetViewWithoutCounter(
                                 mContext,
-                                MyAppAds.admobInterstitialAd, MyAppAds.maxInterstitialAdLiveEarth
-                            ,mIntent)
+                                MyAppAds.admobInterstitialAd,
+                                MyAppAds.maxInterstitialAdLiveEarth,
+                                mIntent
+                            )
                         }
+
                         4 -> {
                             binding.adWaitingLayout.visibility = View.VISIBLE
 
@@ -133,9 +147,12 @@ class HomeFragment : Fragment() {
                             val mIntent = Intent(mContext, NavigationMainActivity::class.java)
                             MyAppShowAds.meidationForClickLiveStreetViewWithoutCounter(
                                 mContext,
-                                MyAppAds.admobInterstitialAd, MyAppAds.maxInterstitialAdLiveEarth
-                            ,mIntent)
+                                MyAppAds.admobInterstitialAd,
+                                MyAppAds.maxInterstitialAdLiveEarth,
+                                mIntent
+                            )
                         }
+
                         5 -> {
                             binding.adWaitingLayout.visibility = View.VISIBLE
 
@@ -143,9 +160,12 @@ class HomeFragment : Fragment() {
                             val mIntent = Intent(mContext, MyLocationMainActivity::class.java)
                             MyAppShowAds.meidationForClickLiveStreetViewWithoutCounter(
                                 mContext,
-                                MyAppAds.admobInterstitialAd, MyAppAds.maxInterstitialAdLiveEarth
-                            ,mIntent)
+                                MyAppAds.admobInterstitialAd,
+                                MyAppAds.maxInterstitialAdLiveEarth,
+                                mIntent
+                            )
                         }
+
                         6 -> {
                             binding.adWaitingLayout.visibility = View.VISIBLE
 
@@ -155,8 +175,8 @@ class HomeFragment : Fragment() {
                                 MyAppShowAds.meidationForClickLiveStreetViewWithoutCounter(
                                     mContext,
                                     MyAppAds.admobInterstitialAd,
-                                    MyAppAds.maxInterstitialAdLiveEarth
-                                ,mIntent)
+                                    MyAppAds.maxInterstitialAdLiveEarth, mIntent
+                                )
 
                             } else {
                                 Toast.makeText(

@@ -92,9 +92,9 @@ class Home : AppCompatActivity(), LocationDialogCallback {
             }
         }
 
-        binding.appBarHome.premiumBtn.setOnClickListener {
+      /*  binding.appBarHome.premiumBtn.setOnClickListener {
             startActivity(Intent(this, PremiumActivity::class.java))
-        }
+        }*/
 
     }
 
@@ -112,7 +112,7 @@ class Home : AppCompatActivity(), LocationDialogCallback {
         mFetchLocation.initLocationRequest()
         gpsEnableDialog = LocationDialog(this, this)
 
-        binding.appBarHome.premiumBtn.setAnimation(R.raw.premium_anim)
+       // binding.appBarHome.premiumBtn.setAnimation(R.raw.premium_anim)
 
         mLocationService = LocationService(this, gpsEnableDialog!!)
         try {

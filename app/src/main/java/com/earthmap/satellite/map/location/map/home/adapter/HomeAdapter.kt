@@ -18,6 +18,7 @@ import com.earthmap.satellite.map.location.map.home.callback.HomeCallback
 class HomeAdapter(
     var mContext: Context,
     var list: ArrayList<HomeItemModel>,
+    var isSensorAvailable: Boolean,
     var callback: HomeCallback
 ) :
     RecyclerView.Adapter<HomeAdapter.HomeViewHolder>() {
@@ -44,12 +45,26 @@ class HomeAdapter(
     @SuppressLint("ResourceAsColor")
     override fun onBindViewHolder(holder: HomeViewHolder, position: Int) {
         val model = list[position]
-        holder.itemCard!!.background=mContext.getDrawable(model.itemCircleColour)
-        holder.txt!!.text = model.itemTxt
-        Glide.with(mContext).load(model.src).into(holder.img!!)
-        holder.btn!!.setOnClickListener {
-            callback.onItemClick(model,position)
+        if (isSensorAvailable) {
+            holder.itemCard!!.background = mContext.getDrawable(model.itemCircleColour)
+            holder.txt!!.text = model.itemTxt
+            Glide.with(mContext).load(model.src).into(holder.img!!)
+            holder.btn!!.setOnClickListener {
+                callback.onItemClick(model, position)
+            }
+        } else {
+            if (model.itemTxt == "Compass") {
+                return
+            } else {
+                holder.itemCard!!.background = mContext.getDrawable(model.itemCircleColour)
+                holder.txt!!.text = model.itemTxt
+                Glide.with(mContext).load(model.src).into(holder.img!!)
+                holder.btn!!.setOnClickListener {
+                    callback.onItemClick(model, position)
+                }
+            }
         }
+
 
 
     }

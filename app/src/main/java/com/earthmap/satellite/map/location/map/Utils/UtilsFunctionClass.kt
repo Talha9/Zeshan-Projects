@@ -114,8 +114,7 @@ class UtilsFunctionClass {
             var checkLocation=false
             var checkStorage=false
             val permissions = arrayOf<String>(
-                Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION,
-                Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION)
             val rationale = "Please provide permission so that you can Use Module..."
             val options: Permissions.Options = Permissions.Options()
                 .setRationaleDialogTitle("Info")
@@ -141,13 +140,13 @@ class UtilsFunctionClass {
                                     constants.locationModule=false
                                 }
                             }
-                            if(deniedPermissions[i]== Manifest.permission.READ_EXTERNAL_STORAGE || deniedPermissions[i]== Manifest.permission.WRITE_EXTERNAL_STORAGE){
+                           /* if(deniedPermissions[i]== Manifest.permission.READ_EXTERNAL_STORAGE || deniedPermissions[i]== Manifest.permission.WRITE_EXTERNAL_STORAGE){
                                 if (!checkStorage) {
                                     Toast.makeText(mContext,"Storage Permission Not Allowed!",Toast.LENGTH_SHORT).show()
                                     checkStorage=true
                                     constants.storageModule=false
                                 }
-                            }
+                            }*/
                         }
                     }
                 })
