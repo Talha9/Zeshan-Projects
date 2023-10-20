@@ -33,7 +33,7 @@
     <string name="sotw_southwest">SW</string>
 
     <!--Test ad ids-->
-    <string name="admob_app_id">ca-app-pub-7041249337741976~9570912262</string>
+   <!-- <string name="admob_app_id">ca-app-pub-7041249337741976~9570912262</string>
     <string name="applovin_app_id">xsUBG4sghiVDHcDMQiUxLhH3KN3x9lNiXlDEK4ovXr0Jgqg7sP092cmS02G8RsaHiXVsfma7lHbJezS9Cw4Tq1</string>
     <string name="admob_banner_ad_id">ca-app-pub-3940256099942544/6300978111</string>
     <string name="admob_interstitial_ad_id">ca-app-pub-3940256099942544/1033173712</string>
@@ -42,14 +42,14 @@
     <string name="max_banner_id">ca-app-pub-3940256099942544/3419835294</string>
     <string name="max_interstitial_id">xsUBG4sghiVDHcDMQiUxLhH3KN3x9lNiXlDEK4ovXr0Jgqg7sP092cmS02G8RsaHiXVsfma7lHbJezS9Cw4Tq1</string>
     <string name="max_native_id">xsUBG4sghiVDHcDMQiUxLhH3KN3x9lNiXlDEK4ovXr0Jgqg7sP092cmS02G8RsaHiXVsfma7lHbJezS9Cw4Tq1</string>
-
+-->
     <string name="live_earth_map">Live Earth Map and Navigation</string>
     <string name="title_line">See The Map in Different Way</string>
     <string name="Premium_privacy_desc"><u>Privacy policy &amp; Terms of Use</u></string>
 
 
     <!--  Live ad ids-->
-    <!--<string name="admob_app_id">ca-app-pub-7041249337741976~9570912262</string>
+    <string name="admob_app_id">ca-app-pub-7041249337741976~9570912262</string>
      <string name="applovin_app_id">xsUBG4sghiVDHcDMQiUxLhH3KN3x9lNiXlDEK4ovXr0Jgqg7sP092cmS02G8RsaHiXVsfma7lHbJezS9Cw4Tq1</string>
       <string name="admob_banner_ad_id">ca-app-pub-7041249337741976/1697458962</string>
       <string name="admob_interstitial_ad_id">ca-app-pub-7041249337741976/5445132284</string>
@@ -57,6 +57,6 @@
       <string name="admob_app_open_ad_id">ca-app-pub-7041249337741976/3361894425</string>
           <string name="max_banner_id">7daab05bce1b90d7</string>
     <string name="max_interstitial_id">46fb02a6dc24a0aa</string>
-    <string name="max_native_id">257bda085e2c7f4d</string>-->
+    <string name="max_native_id">257bda085e2c7f4d</string>
 
 </resources>
